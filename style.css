@@ -15,10 +15,14 @@
     background-color :rgba(5, 10, 19, 0.836);
     padding : 1.5rem;
     min-width: 350px;
-    height : 500px
+    height : 500px ; 
+    border-radius : 15px 
 }
 .title{
     font-weight:  500;
+}
+#password{
+    word-wrap:break-all;
 }
 .result{
     margin: 5px 0 ;
