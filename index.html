@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+   <div class="container">
+       <div class="passwordsContainer">
+           <h1 class="title">Password Generator</h1>
+           <div class="result">
+               <p id="password">Click Generator</p>
+           </div>
+           <small>length : <span id="rangeval">16</span> </small>
+           <div class="range">
+               <span>4</span>
+               <input type="range" value="16" onchange="rangeValue(this.value)" min="4" max="32">
+               <span>32</span>
+           </div>
+           <small>setting</small>
+           <form id="from" class="from">
+               <div class="input-group">
+                   <label>Include UpperCase</label>
+                   <label class="toggler">
+                       <input type="checkbox" id="upperCase"  checked >
+                       <span class="slider"></span>
+                   </label>
+               </div>
+               <div class="input-group">
+                <label for="">Include Lowercase</label>
+                <label class="toggler">
+                    <input type="checkbox" id="lowerCase" >
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="">Include Numbers</label>
+                <label class="toggler">
+                    <input type="checkbox" id="number">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="">Include Symbols</label>
+                <label class="toggler">
+                    <input type="checkbox"  id=Symbols>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button class="btn">generate password</button> 
+           </form>
+       </div>
+       <script src="script.js"></script>
+   </div>
+</body>
+</html>
